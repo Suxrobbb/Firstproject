@@ -4,9 +4,16 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello , World!");
-            Console.WriteLine("Hi , Suxrob!");
-            Console.WriteLine("Hi , Suxrob!");
+            Console.Write("4 xonali son kiriting : ");
+            var number = Convert.ToInt32(Console.ReadLine());
+            var ones = number%10;
+            var tens = number/10%10;
+            var hundreds = number/100%10;
+            var thousands = number/1000%10;
+            var result = ones+tens+hundreds+thousands;
+            Console.WriteLine(result);
+
+             
         }
     }
 }
