@@ -1,0 +1,80 @@
+namespace _1___dars_uyga_vazifasi
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            ///1
+            /*
+            Console.Write("Natural son kiriting : ");
+            var number = Convert.ToInt32(Console.ReadLine());
+            if (number > 0 && number % 2 == 0 ){
+                Console.WriteLine("true");
+            }
+            else
+            {
+                Console.WriteLine("false");
+            }
+            */
+            ///2
+            /*
+            Console.Write("Natural son kiriting : ");
+            var number = Convert.ToInt32(Console.ReadLine());
+            if (number > 0 && number % 2 == 1)
+            {
+                Console.WriteLine("true");
+            }
+            else
+            {
+                Console.WriteLine("false");
+            }
+            */
+            ///3
+            /*
+            Console.Write("Natural son kiriting : ");
+            var number = Convert.ToInt32(Console.ReadLine());
+            if (number >= 10 && number <= 99)
+            {
+                Console.WriteLine("true");
+            }
+            else
+            {
+                Console.WriteLine("false");
+            }
+            */
+            ///4
+            /*
+            Console.Write("Natural son kiriting : ");
+            var number = Convert.ToInt32(Console.ReadLine());
+            if (number >= 1000 && number <= 9999)
+            {
+                Console.WriteLine("true");
+            }
+            else
+            {
+                Console.WriteLine("false");
+            }
+            */
+            ///12
+            /*
+            Console.Write("Natural son kiriting : ");
+            var number = Convert.ToInt32(Console.ReadLine());
+            var ones = number%10;
+            var tens = number/10%10;
+            var hundreds = number/100%10;
+            Console.WriteLine(ones+tens*100+hundreds*10);
+            */
+            ///2
+            /*
+            Console.Write("Natural son kiriting : ");
+            var number = Convert.ToInt32(Console.ReadLine());
+            var result=number*number;
+            Console.WriteLine(result*result*result);
+            */
+
+
+
+
+        }  
+    }
+}
