@@ -1,0 +1,28 @@
+namespace _4___dars
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter : ");
+            var word = Console.ReadLine();
+            var result = String.Empty;
+            foreach (var text in word)
+            {
+                if (char.IsUpper(text) is true)
+                {
+                    result+=char.ToLower(text);
+                }
+                else if (char.IsLower(text) is true)
+                {
+                    result+=char.ToUpper(text);
+                }
+                else
+                {
+                    result+=text;
+                }
+            }
+            Console.WriteLine(result);
+        }
+    }
+}
