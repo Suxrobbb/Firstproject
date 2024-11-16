@@ -1,0 +1,78 @@
+namespace _5_dars
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //qiyin 21
+            Console.Write("Enter length : ");
+            var length = int.Parse(Console.ReadLine());
+            var numbers = new List<int>();
+            for (var i = 0; i<length; i++)
+            {
+                Console.Write($"{i} : ");
+                var element = int.Parse(Console.ReadLine());
+                numbers.Add(element);
+            }
+            for (var i = 0; i<numbers.Count; i++)
+            {
+                Console.Write(numbers[i]+" ");
+            }
+            var rezult = TrueAndFalse(numbers);
+            Console.WriteLine(rezult);
+
+        }
+
+        public static bool TrueAndFalse(List<int> numbers)
+        {
+            for (var i = 0; i < numbers.Count - 1; i++)
+            {
+                if (numbers[i] >= numbers[i + 1])
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
+}
+
+22.
+namespace _5_dars
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //qiyin 22
+            Console.Write("Enter length : ");
+            var length = int.Parse(Console.ReadLine());
+            var numbers = new List<int>();
+            for (var i = 0; i<length; i++)
+            {
+                Console.Write($"{i} : ");
+                var element = int.Parse(Console.ReadLine());
+                numbers.Add(element);
+            }
+            for (var i = 0; i<numbers.Count; i++)
+            {
+                Console.Write(numbers[i]+" ");
+            }
+            var rezult = TrueOrFalse(numbers);
+            Console.WriteLine(rezult);
+
+        }
+
+        public static bool TrueOrFalse(List<int> numbers)
+        {
+            for (var i = 0; i < numbers.Count - 1; i++)
+            {
+                if (numbers[i] <= numbers[i + 1])
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
+}
