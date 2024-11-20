@@ -1,0 +1,32 @@
+using System.Xml.Linq;
+
+namespace _7_dars
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List<Student> students = new List<Student>();
+            
+            Student student1 = new Student();
+            student1.Name="Suxrob";
+            student1.Age=19;
+            student1.LeakName="TATU";
+            student1.Course=2;
+            student1.NumberOfStudents=25;
+
+            Student student2 = new Student()
+            {
+                Name="Dilshod",
+                Age=22,
+                LeakName="TDTU",
+                Course=4,
+                NumberOfStudents=15,
+
+            };
+            var students3=new List<Student>();
+            student1.DisplayInfo();
+            student2.DisplayInfo();
+        }
+    }
+}

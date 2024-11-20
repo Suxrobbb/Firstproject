@@ -1,0 +1,22 @@
+namespace _7_dars;
+
+public class Restaurant
+{
+    public string Name { get; set; }
+
+    public string MainLocation { get; set; }
+
+    public int BranchCount { get; set; }      
+    
+    public string CuisineType { get; set; }
+
+    public int EmployeeCount { get; set; }   
+
+    public string BusinessHours { get; set; } 
+
+    public void DisplayInfo()
+    {
+        string result = $"Restaurant -> Name: {Name}, MainLocation: {MainLocation}, BranchCount: {BranchCount}, CuisineType: {CuisineType}, EmployeeCount: {EmployeeCount}, BusinessHours: {BusinessHours}";
+        Console.WriteLine(result);
+    }
+}
