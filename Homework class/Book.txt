@@ -1,0 +1,16 @@
+namespace _7_dars;
+
+internal class Book
+{
+    public string Title { get; set; }          
+    public double Price { get; set; }        
+    public string Author { get; set; }     
+    public string Genre { get; set; }       
+    public string Language { get; set; }    
+    public string WrittenYear { get; set; }     
+    public void DisplayInfo()
+    {
+        string result = $"Book -> Title: {Title}, Price: {Price}, Author: {Author}, Genre: {Genre}, Language: {Language}, WrittenYear: {WrittenYear}";
+        Console.WriteLine(result);
+    }
+}
